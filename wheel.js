@@ -7,7 +7,7 @@ const prizes = [
   { label: "Главный приз", color: "#ffcc00", probability: 5 }
 ];
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyeq6UWMzgVa3xOWn426WzRu-gRp1za3Ws4DONlImQUSM_wfkzSEXU2ykXfBbWJhAo-Uw/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxq7B0v1DFi1MKCXrv5T7adVzsssbpulqxo9oq_rjPlZF0DutRiKkLnTEuXv-l1Nuc_VQ/exec";
 const USER_UID = new URLSearchParams(window.location.search).get("uid") || crypto.randomUUID();
 
 let userName = "", userPhone = "", isSpinning = false;
