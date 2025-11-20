@@ -55,7 +55,6 @@ async function sendResult(prize){
   try{
     await fetch(GOOGLE_SCRIPT_URL, {
       method: "POST",
-      mode: "no-cors", // <--- отключаем CORS проверку браузером
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
         uid: USER_UID,
