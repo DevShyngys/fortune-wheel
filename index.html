@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Колесо Фортуны</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app">
+  <header>
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <h1>Колесо Фортуны</h1>
+    <p>Введите данные и крутите колесо</p>
+  </header>
+
+  <!-- Форма -->
+  <div class="wheel-card user-form">
+    <input id="userName" type="text" placeholder="Ваше имя" required>
+    <input id="userPhone" type="text" placeholder="Номер телефона" required>
+    <button id="startBtn">Начать</button>
+  </div>
+
+  <!-- Колесо -->
+  <div class="wheel-card wheel-area" style="display:none;">
+    <div class="wheel-stage">
+      <canvas id="wheelCanvas" width="320" height="320"></canvas>
+      <div class="pointer"></div>
+    </div>
+    <button id="spinBtn">SPIN</button>
+    <div class="result" id="result">—</div>
+  </div>
+</main>
+
+<script src="wheel.js"></script>
+</body>
+</html>
